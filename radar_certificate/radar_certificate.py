@@ -19,12 +19,12 @@ def import_data(data_file):
     attendee_data = csv.reader(open(data_file, "rt"))
     for row in attendee_data:
         # import the data
-        agency_name = row[0]
-        last_name = row[1]
-        first_name = row[2]
-        issue_date = row[3]
-        exp_date = row[4]
-        instructor = row[5]
+        agency_name = row[1]
+        last_name = row[2]
+        first_name = row[3]
+        issue_date = row[4]
+        exp_date = row[5]
+        instructor = row[6]
 
         pdf_file_name = last_name + '_' + first_name + '.pdf'
         generate_certificate(agency_name, first_name, last_name, issue_date, exp_date, instructor, pdf_file_name)
