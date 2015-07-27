@@ -42,6 +42,7 @@
   <ItemGroup>
     <Content Include="ATCitadelScript.ttf" />
     <Content Include="data.csv" />
+    <Content Include="installer.cfg" />
     <Content Include="sealSM.jpg" />
   </ItemGroup>
   <PropertyGroup>
