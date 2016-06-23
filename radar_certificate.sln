@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2013
-VisualStudioVersion = 12.0.31101.0
+# Visual Studio 14
+VisualStudioVersion = 14.0.23107.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "radar_certificate", "radar_certificate\radar_certificate.pyproj", "{93A07E29-CF86-407C-B6F0-15B2B97B91D0}"
 EndProject
@@ -14,6 +14,8 @@ Global
 		{93A07E29-CF86-407C-B6F0-15B2B97B91D0}.Debug|Any CPU.ActiveCfg = Release|Any CPU
 		{93A07E29-CF86-407C-B6F0-15B2B97B91D0}.Debug|Any CPU.Build.0 = Release|Any CPU
 		{93A07E29-CF86-407C-B6F0-15B2B97B91D0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{93A07E29-CF86-407C-B6F0-15B2B97B91D0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{93A07E29-CF86-407C-B6F0-15B2B97B91D0}.Release|Any CPU.Deploy.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

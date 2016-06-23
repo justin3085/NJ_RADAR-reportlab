@@ -8,12 +8,19 @@
     <StartupFile>radar_certificate.py</StartupFile>
     <SearchPath>
     </SearchPath>
-    <WorkingDirectory>.</WorkingDirectory>
+    <WorkingDirectory>
+    </WorkingDirectory>
     <OutputPath>.</OutputPath>
     <Name>radar_certificate</Name>
     <RootNamespace>radar_certificate</RootNamespace>
-    <InterpreterId>{ded159aa-9b52-4e68-b614-02fa7069f331}</InterpreterId>
+    <InterpreterId>{adc50caf-9ce4-4381-949d-efd5ae5d3404}</InterpreterId>
     <InterpreterVersion>3.4</InterpreterVersion>
+    <IsWindowsApplication>True</IsWindowsApplication>
+    <LaunchProvider>Standard Python launcher</LaunchProvider>
+    <InterpreterPath>
+    </InterpreterPath>
+    <EnableNativeCodeDebugging>False</EnableNativeCodeDebugging>
+    <DebugStdLib>False</DebugStdLib>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
     <DebugSymbols>true</DebugSymbols>
@@ -27,11 +34,11 @@
     <Compile Include="radar_certificate.py" />
   </ItemGroup>
   <ItemGroup>
-    <Interpreter Include="cert_env\">
-      <Id>{ded159aa-9b52-4e68-b614-02fa7069f331}</Id>
+    <Interpreter Include="certVirt\">
+      <Id>{adc50caf-9ce4-4381-949d-efd5ae5d3404}</Id>
       <BaseInterpreter>{2af0f10d-7135-4994-9156-5d01c9c11b7e}</BaseInterpreter>
       <Version>3.4</Version>
-      <Description>cert_env (Python 3.4)</Description>
+      <Description>certVirt (Python 3.4)</Description>
       <InterpreterPath>Scripts\python.exe</InterpreterPath>
       <WindowsInterpreterPath>Scripts\pythonw.exe</WindowsInterpreterPath>
       <LibraryPath>Lib\</LibraryPath>

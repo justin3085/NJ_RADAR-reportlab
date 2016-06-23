@@ -1,7 +1,8 @@
-from reportlab.pdfgen import canvas
+﻿from reportlab.pdfgen import canvas
 from reportlab.lib.pagesizes import letter
 from reportlab.pdfbase import pdfmetrics
 from reportlab.pdfbase.ttfonts import TTFont
+from datetime import date
 # from reportlab.lib.pagesizes import landscape
 # from reportlab.platypus import Image
 
@@ -11,9 +12,9 @@ data_file = 'data.csv'
 
 # Define a function to import data - which objects are being imported.
 
-
 def import_data(data_file):
     attendee_data = csv.reader(open(data_file, "rt"))
+
     for row in attendee_data:
         # import the data
         agency_name = row[0]
@@ -23,7 +24,7 @@ def import_data(data_file):
         exp_date = row[4]
         instructor = row[5]
 
-        pdf_file_name = last_name + '_' + first_name + '.pdf'
+        pdf_file_name = last_name + '_' + first_name + '_' + str(date.today().year) + '.pdf'
         generate_certificate(agency_name, first_name, last_name, issue_date, exp_date, instructor, pdf_file_name)
 
 
@@ -68,7 +69,7 @@ def generate_certificate(agency_name, first_name, last_name, issue_date, exp_dat
     c.drawString(43, 637, "Issue Date")
 
     # add issue date
-    c.setFont('Times-Roman', 11, leading=None)
+    c.setFont('Times-Roman', 10, leading=None)
     c.drawString(40, 649, issue_date)
 
     # expiration date static
@@ -77,7 +78,7 @@ def generate_certificate(agency_name, first_name, last_name, issue_date, exp_dat
     c.drawString(215, 637, "Expiration Date")
 
     # add expiration date
-    c.setFont('Times-Roman', 11, leading=None)
+    c.setFont('Times-Roman', 10, leading=None)
     c.drawString(220, 649, exp_date)
 
     # add static instructor text
